@@ -14,7 +14,7 @@ const app = express();
 import authRoutes from "./routes/signup.js";
 
 app.use(cors({
-  origin: 'https://spice-sprint.vercel.app/'
+  origin: 'https://spice-sprint.vercel.app'
 }));
 
 app.use(express.json());
