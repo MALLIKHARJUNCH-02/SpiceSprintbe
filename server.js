@@ -13,7 +13,10 @@ import error from "console";
 const app = express();
 import authRoutes from "./routes/signup.js";
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://mallikharjun-reddy-portfolio.vercel.app/'
+}));
+
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI)
